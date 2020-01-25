@@ -103,12 +103,11 @@
 		],
 		"concurrency": 4,
 		"timeout": "1m",
-		"extensions": [
-			"ts"
-		],
-		"require": [
-			"ts-node/register"
-		]
+		"typescript": {
+			"rewritePaths": {
+				"test/": "dist/test/"
+			}
+		}
 	},
 	"nyc": {
 		"extension": [
